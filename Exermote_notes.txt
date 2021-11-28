@@ -1,0 +1,17 @@
+About the project:
+	Exermote is a fitness app prototype, which is capable to detect Burpees, Squats and Situps and to count related repetitions.
+	The exercise recognition is done with Convolutional LSTM Neural Networks.
+
+About The Data:
+	To recorde the data the programmer has used 2 different types of devices:
+	- Iphone on right upper arm: 12 data features (3x gravity, 3x acceleration, 3x euler angle, 3x rotation rate).
+	- 6x Estimote Nearables on chest, belly, hands and feet: each 4 data features (3x acceleration, 1x rssi)
+
+	The Recording frequency was 10 Hz for the reason that Nearable send frequency is limited to this value on hardware side.
+
+About the model training:
+	The Programmer used DeepConvLSTM Neural Networks that were already tested by Francisco Javier Ordóñez and Daniel Roggen for recognizing activities of daily living.
+	The model takes time sequences of raw sensor data and outputs the according exercise label.
+	About the training:
+		The whole training procedure took place in the google cloud, The machine learning framework in use was Keras with TensorFlow as backend.
+

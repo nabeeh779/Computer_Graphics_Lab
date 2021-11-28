@@ -1,0 +1,14 @@
+About the Project:
+	project aims to build a deep learning solution to count the repetitions of exercises such as push ups or pull ups. 
+	A model that can run on phones and that is possible to train with only a few hundred images.
+
+About The Data:
+	the data was constructed from several videos,The videos were processed with the optical flow algorithm. This algorithm allowed to construct
+ 	a new video with a few colours representing the movement of the subjects in the videos.data
+	 was constructed from several videos removed from youtube and some home-made videos.
+	The videos were processed with the optical flow algorithm. 
+	This algorithm allowed to construct a new video with a few colours representing the movement of the subjects in the videos.
+
+About the model training:
+	The model used was a small convolutional neural network built in Keras. the goal of the model was from the input frames, predict if the subject was moving down, up or not moving.
+	**Movement of the subject was analysed frame by frame. And what was considered as a repetition was a change of state**

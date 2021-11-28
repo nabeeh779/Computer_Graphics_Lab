@@ -1,0 +1,13 @@
+About The Project:
+	Simple AI trainer app using OpenCV Python and MediaPipe Python,
+	It detects exercising-pose, which is given realtime, and counts prope" reps.
+About The Data:
+	Getting landmarks on the body using MediaPipe: Pose Estimation, Depending on the exercise chosen,
+	 it calculates the angles between joints which actually matter ,It only counts "proper" reps, by checking the range of important angle.
+
+About the model training:
+	it is so simple the programmer used MediaPipe.
+**MediaPipe offers cross-platform, customizable ML solutions for live and streaming media.**
+
+LINK: https://google.github.io/mediapipe/
+
